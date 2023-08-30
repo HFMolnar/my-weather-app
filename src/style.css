@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #282c3b;
+}
+
+h1 {
+  font-size: 80pt;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 30pt;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 12pt;
+  font-weight: 300;
+}
+p {
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.container {
+  background-color: #175676;
+  padding: 20px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 100%;
+}
+.search {
+  background-color: #9ed0e6;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+.todays-weather,
+.more-info {
+  background-color: #9ed0e6;
+  padding: 40px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+
+.extra-info-text {
+  margin-bottom: 20px;
+}
+.number {
+  margin-bottom: 0;
+}
+.side-bar {
+  background-color: #9ed0e6;
+  padding: 30px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+.forecast {
+  padding: 10px;
+}
+.next-week {
+  padding: 10px 0 41px 10px;
+  align-items: center;
+}
+.units {
+  position: relative;
+  top: 100px;
+  padding: 0 5px;
+}
