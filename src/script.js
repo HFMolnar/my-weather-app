@@ -72,8 +72,6 @@ function showTemp(response) {
 function submitSearch(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  let cityName = document.querySelector("#city-name");
-  cityName.innerHTML = `${searchInput.value}`;
   let apiKey = "017d56650cd168d68067850318775d43";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&units=metric&appid=${apiKey}`;
   axios.get(apiUrl).then(showTemp);
