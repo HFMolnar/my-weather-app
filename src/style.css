@@ -68,3 +68,9 @@ p {
   top: 100px;
   padding: 0 5px;
 }
+
+.page-info {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+}
