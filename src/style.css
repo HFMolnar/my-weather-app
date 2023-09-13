@@ -44,6 +44,10 @@ p {
   border-radius: 5px;
 }
 
+.todays-temp {
+  margin: 0 auto;
+}
+
 .extra-info-text {
   margin-bottom: 20px;
 }
@@ -64,9 +68,9 @@ p {
   align-items: center;
 }
 .units {
+  font-size: 10pt;
   position: relative;
-  top: 100px;
-  padding: 0 5px;
+  top: -20px;
 }
 
 .page-info {
