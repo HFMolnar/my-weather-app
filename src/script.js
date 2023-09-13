@@ -61,12 +61,18 @@ function showTemp(response) {
   let lowTemp = document.querySelector("#low-temp");
   let windSpeed = document.querySelector("#wind-speed");
   let rainFall = document.querySelector("#rain-fall");
+  let iconElement = document.querySelector("#main-icon");
   todaysTemp.innerHTML = `${Math.round(response.data.main.temp)}°C`;
   highTemp.innerHTML = `${Math.round(response.data.main.temp_max)}°C`;
   lowTemp.innerHTML = `${Math.round(response.data.main.temp_min)}°C`;
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}mph`;
   rainFall.innerHTML = `${Math.round(response.data.main.humidity)}%`;
   todaysDetails.innerHTML = `Today is ${response.data.weather[0].description}`;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function submitSearch(event) {
