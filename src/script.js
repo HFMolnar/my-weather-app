@@ -44,8 +44,6 @@ function formatDate() {
   return `${day} ${date} ${month}, ${hour}:${min} `;
 }
 
-//console.log(formatDate(new Date()));
-
 let todaysDate = document.querySelector("#todays-date");
 todaysDate.innerHTML = formatDate(new Date());
 
@@ -54,7 +52,6 @@ todaysDate.innerHTML = formatDate(new Date());
 function showTemp(response) {
   console.log(response);
   let cityName = document.querySelector("#city-name");
-  cityName.innerHTML = response.data.name;
   let todaysTemp = document.querySelector("#todays-temp");
   let todaysDetails = document.querySelector("#todays-details");
   let highTemp = document.querySelector("#high-temp");
@@ -62,12 +59,13 @@ function showTemp(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let rainFall = document.querySelector("#rain-fall");
   let iconElement = document.querySelector("#main-icon");
+  cityName.innerHTML = response.data.name;
   todaysTemp.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+  todaysDetails.innerHTML = `Today is ${response.data.weather[0].description}`;
   highTemp.innerHTML = `${Math.round(response.data.main.temp_max)}°C`;
   lowTemp.innerHTML = `${Math.round(response.data.main.temp_min)}°C`;
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}mph`;
   rainFall.innerHTML = `${Math.round(response.data.main.humidity)}%`;
-  todaysDetails.innerHTML = `Today is ${response.data.weather[0].description}`;
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -85,6 +83,9 @@ function submitSearch(event) {
 
 let search = document.querySelector("#search-form");
 search.addEventListener("submit", submitSearch);
+
+let tempF = document.querySelector("#fahrenheit");
+tempF.addEventListener("click", changeUnit());
 
 //
 

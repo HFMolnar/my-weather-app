@@ -78,3 +78,9 @@ p {
   padding: 20px 0;
   text-align: center;
 }
+
+.large-symbol {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 400px;
+}
