@@ -24,7 +24,7 @@ p {
 
 .container {
   background-color: #175676;
-  padding: 20px;
+  padding: 15px;
   border: solid 1px transparent;
   border-radius: 5px;
   margin-top: 50px;
@@ -35,6 +35,14 @@ p {
   padding: 10px;
   border: solid 1px transparent;
   border-radius: 5px;
+}
+
+.main-content {
+  padding: 10px 10px 10px 20px;
+}
+
+.side-br {
+  padding: 10px 20px 10px 10px;
 }
 .todays-weather,
 .more-info {
@@ -81,8 +89,7 @@ p {
 
 .large-symbol {
   margin: 0 auto;
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 100%;
 }
 
 .active {
