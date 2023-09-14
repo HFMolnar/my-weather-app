@@ -59,8 +59,11 @@ function showTemp(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let rainFall = document.querySelector("#rain-fall");
   let iconElement = document.querySelector("#main-icon");
+
+  celsiusTemperature = response.data.main.temp;
+
   cityName.innerHTML = response.data.name;
-  todaysTemp.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+  todaysTemp.innerHTML = `${Math.round(celsiusTemperature)}°C`;
   todaysDetails.innerHTML = `Today is ${response.data.weather[0].description}`;
   highTemp.innerHTML = `${Math.round(response.data.main.temp_max)}°C`;
   lowTemp.innerHTML = `${Math.round(response.data.main.temp_min)}°C`;
@@ -81,11 +84,33 @@ function submitSearch(event) {
   axios.get(apiUrl).then(showTemp);
 }
 
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  tempC.classList.remove("active");
+  tempF.classList.add("active");
+  let todaysTemp = document.querySelector("#todays-temp");
+  let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  todaysTemp.innerHTML = `${Math.round(farenheitTemp)}°F`;
+}
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  tempC.classList.add("active");
+  tempF.classList.remove("active");
+  let todaysTemp = document.querySelector("#todays-temp");
+  todaysTemp.innerHTML = `${Math.round(celsiusTemperature)}°C`;
+}
+
+let celsiusTemperature = null;
+
 let search = document.querySelector("#search-form");
 search.addEventListener("submit", submitSearch);
 
 let tempF = document.querySelector("#fahrenheit");
-tempF.addEventListener("click", changeUnit());
+tempF.addEventListener("click", showFahrenheitTemp);
+
+let tempC = document.querySelector("#celsius");
+tempC.addEventListener("click", showCelsiusTemp);
 
 //
 

@@ -84,3 +84,13 @@ p {
   min-width: 300px;
   max-width: 400px;
 }
+
+.active {
+  color: #282c3b;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #282c3b;
+}
