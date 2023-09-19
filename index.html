@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-8 main-content">
+        <div class="col-12 col-xl-8 main-content">
           <section class="search">
             <form class="form-inline" id="search-form">
               <input
@@ -59,7 +59,12 @@
                 </h3>
               </div>
               <div class="col-sm-5">
-                <img src="" alt="symbol" class="large-symbol" id="main-icon" />
+                <img
+                  src="images/clear-day.svg"
+                  alt="symbol"
+                  class="large-symbol"
+                  id="main-icon"
+                />
               </div>
             </div>
           </section>
@@ -90,90 +95,11 @@
             </div>
           </section>
         </div>
-        <div class="col-4 side-br">
+        <div class="col-12 col-xl-4 side-bar-col">
           <section class="side-bar">
-            <h3 class="forecast">5-day forecast</h3>
-            <div class="row next-week">
-              <div class="col">
-                <p>Mon</p>
-              </div>
-              <div class="col">
-                <img
-                  src="images/clear-day.svg"
-                  alt="small-symbol"
-                  width="60px"
-                />
-              </div>
-              <div class="col">
-                <p>Sunny</p>
-              </div>
-              <div class="col">
-                <p>25°C</p>
-              </div>
-            </div>
-            <div class="row next-week">
-              <div class="col">
-                <p>Tues</p>
-              </div>
-              <div class="col">
-                <img
-                  src="images/partly-cloudy-day.svg"
-                  alt="small-symbol"
-                  width="60px"
-                />
-              </div>
-              <div class="col">
-                <p>Partly cloudy</p>
-              </div>
-              <div class="col">
-                <p>20°C</p>
-              </div>
-            </div>
-            <div class="row next-week">
-              <div class="col">
-                <p>Wed</p>
-              </div>
-              <div class="col">
-                <img src="images/cloudy.svg" alt="small-symbol" width="60px" />
-              </div>
-              <div class="col">
-                <p>Cloudy</p>
-              </div>
-              <div class="col">
-                <p>18°C</p>
-              </div>
-            </div>
-            <div class="row next-week">
-              <div class="col">
-                <p>Thurs</p>
-              </div>
-              <div class="col">
-                <img src="images/showers.svg" alt="small-symbol" width="60px" />
-              </div>
-              <div class="col">
-                <p>Showers</p>
-              </div>
-              <div class="col">
-                <p>20°C</p>
-              </div>
-            </div>
-            <div class="row next-week">
-              <div class="col">
-                <p>Fri</p>
-              </div>
-              <div class="col">
-                <img
-                  src="images/thunderstorm-showers.svg"
-                  alt="small-symbol"
-                  width="60px"
-                />
-              </div>
-              <div class="col">
-                <p>Storm</p>
-              </div>
-              <div class="col">
-                <p>19°C</p>
-              </div>
+            <h3 class="forecast-title">5-day forecast</h3>
+            <div class="row next-week-forecast" id="forecast">
+              <div class="col-12"></div>
             </div>
           </section>
         </div>

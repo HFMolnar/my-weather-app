@@ -101,6 +101,35 @@ function showCelsiusTemp(event) {
   todaysTemp.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast .col-12");
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
+
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="row"><div class="col forecast-day">
+                <span>${day}</span>
+              </div>
+              <div class="col forecast-icon">
+                <img
+                  src="images/clear-day.svg"
+                  alt="small-symbol"
+                  width="60px"
+                />
+              </div>
+              <div class="col forecast-description">
+                Sunny 
+              </div>
+              <div class="col forecast-temp">
+                25°C
+              </div></div>`;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celsiusTemperature = null;
 
 let search = document.querySelector("#search-form");
@@ -111,6 +140,8 @@ tempF.addEventListener("click", showFahrenheitTemp);
 
 let tempC = document.querySelector("#celsius");
 tempC.addEventListener("click", showCelsiusTemp);
+
+displayForecast();
 
 //
 
