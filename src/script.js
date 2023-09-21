@@ -119,9 +119,6 @@ function displayForecast() {
                   width="60px"
                 />
               </div>
-              <div class="col forecast-description">
-                Sunny 
-              </div>
               <div class="col forecast-temp">
                 25°C
               </div></div>`;
