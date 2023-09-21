@@ -103,7 +103,7 @@ function showCelsiusTemp(event) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast .col-12");
-  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 
   let forecastHTML = "";
   days.forEach(function (day) {
