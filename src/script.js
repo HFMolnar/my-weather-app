@@ -120,8 +120,10 @@ function displayForecast() {
                 />
               </div>
               <div class="col forecast-temp">
-                25°C
-              </div></div>`;
+                <span class = "weather-forecast-temperature-max"> 25°C </span>
+                <span class = "weather-forecast-temperature-min"> 18°C </span>
+              </div>
+              </div>`;
   });
 
   forecastElement.innerHTML = forecastHTML;

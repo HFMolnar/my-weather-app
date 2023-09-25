@@ -85,13 +85,21 @@ p {
   align-items: center;
 }
 .next-week-forecast .col {
-  padding: 10px 15px 11px;
+  padding: 10px 12px 11px;
   font-size: 10pt;
   font-weight: 300;
 
   display: flex;
   align-items: center;
 }
+
+.weather-forecast-temperature-max {
+  padding-right: 10px;
+}
+.weather-forecast-temperature-min {
+  opacity: 80%;
+}
+
 .units {
   font-size: 10pt;
   position: relative;
