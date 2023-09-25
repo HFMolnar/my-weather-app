@@ -23,15 +23,14 @@ p {
 }
 
 .container {
-  background-color: #175676;
+  background: linear-gradient(180deg, #3e66a2 0%, #d3aba6 100%);
   padding: 15px;
-  border: solid 1px transparent;
   border-radius: 5px;
   margin-top: 50px;
   width: 100%;
 }
 .search {
-  background-color: #9ed0e6;
+  background-color: rgba(242, 233, 228, 0.5);
   padding: 10px;
   border: solid 1px transparent;
   border-radius: 5px;
@@ -56,7 +55,7 @@ p {
 
 .todays-weather,
 .more-info {
-  background-color: #9ed0e6;
+  background-color: rgba(242, 233, 228, 0.5);
   padding: 40px;
   border: solid 1px transparent;
   border-radius: 5px;
@@ -73,7 +72,7 @@ p {
   margin-bottom: 0;
 }
 .side-bar {
-  background-color: #9ed0e6;
+  background-color: rgba(242, 233, 228, 0.5);
   padding: 30px 30px 12px 30px;
   border: solid 1px transparent;
   border-radius: 5px;
@@ -97,7 +96,7 @@ p {
   padding-right: 10px;
 }
 .weather-forecast-temperature-min {
-  opacity: 80%;
+  color: white;
 }
 
 .units {
@@ -115,14 +114,4 @@ p {
 .large-symbol {
   margin: 0 auto;
   min-width: 100%;
-}
-
-.active {
-  color: #282c3b;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-  color: #282c3b;
 }
