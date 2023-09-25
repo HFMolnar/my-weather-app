@@ -141,7 +141,7 @@ function handleSubmit(event) {
 }
 
 let search = document.querySelector("#search-form");
-search.addEventListener("submit", submitSearch);
+search.addEventListener("submit", handleSubmit);
 
 function showPosition(position) {
   let lat = position.coords.latitude;
