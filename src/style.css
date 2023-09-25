@@ -94,9 +94,10 @@ p {
 
 .weather-forecast-temperature-max {
   padding-right: 10px;
+  font-weight: 500;
 }
 .weather-forecast-temperature-min {
-  color: white;
+  opacity: 0.8;
 }
 
 .units {
